@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bowser</title>
+    <style>
+        body {
+            width: 300px;
+            background-color: #87CEEB;
+            color: #000;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            padding: 16px;
+            text-align: center;
+        }
+    
+        label {
+            display: block;
+            font-size: 20px;
+            margin-top: 16px;
+        }
+    
+        textarea {
+            width: 100%;
+            color: #000;
+            margin-top: 16px;
+            padding: 16px;
+            border: 3px solid #FFD700;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    
+        button {
+            background-color: #FFD700;
+            color: #000;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 16px;
+            margin-top: 16px;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #FFA500;
+        }
+
+        #output {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="bowser" src="bowser.png" alt="Bowser" />
+	<label for="instructions">What do you want to do?</label>
+	<textarea id="instructions" rows="8"></textarea>
+	<button id="submit">Submit</button>
+	<textarea id="output" rows="8"></textarea>
+
+	<script src="popup.js"></script>
+</body>
+
+</html>
