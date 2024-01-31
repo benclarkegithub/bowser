@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Job Application Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-tl from-purple-500 to-yellow-500 p-8">
+
+    <div class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl mb-4 font-semibold text-gray-800">Job Application Form</h2>
+        <form>
+            <!-- Personal Information Section -->
+            <fieldset class="mb-4">
+                <legend class="text-lg font-semibold mb-2">Personal Information</legend>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="mb-4">
+                        <label for="firstName" class="block text-sm font-medium text-gray-600">First Name</label>
+                        <input type="text" id="firstName" name="firstName"
+                            class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="lastName" class="block text-sm font-medium text-gray-600">Last Name</label>
+                        <input type="text" id="lastName" name="lastName"
+                            class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-600">Email Address</label>
+                    <input type="email" id="email" name="email"
+                        class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-gray-600">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                        class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500" required>
+                </div>
+            </fieldset>
+
+            <!-- Education Section -->
+            <fieldset class="mb-4">
+                <legend class="text-lg font-semibold mb-2">Education</legend>
+                <div class="mb-4">
+                    <label for="university" class="block text-sm font-medium text-gray-600">University Attended</label>
+                    <input type="text" id="university" name="university"
+                        class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="mb-4">
+                        <label for="degree" class="block text-sm font-medium text-gray-600">Degree Obtained</label>
+                        <input type="text" id="degree" name="degree"
+                            class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="graduationYear" class="block text-sm font-medium text-gray-600">Year of
+                            Graduation</label>
+                        <input type="text" id="graduationYear" name="graduationYear"
+                            class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Work Experience Section -->
+            <fieldset class="mb-4">
+                <legend class="text-lg font-semibold mb-2">Work Experience</legend>
+                <div class="mb-4">
+                    <label for="company" class="block text-sm font-medium text-gray-600">Company Name</label>
+                    <input type="text" id="company" name="company"
+                        class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="mb-4">
+                        <label for="position" class="block text-sm font-medium text-gray-600">Position Held</label>
+                        <input type="text" id="position" name="position"
+                            class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="employmentYears" class="block text-sm font-medium text-gray-600">Years of
+                            Employment</label>
+                        <input type="text" id="employmentYears" name="employmentYears"
+                            class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Additional Questions Section -->
+            <fieldset class="mb-4">
+                <legend class="text-lg font-semibold mb-2">Additional Questions</legend>
+                <div class="mb-4">
+                    <label for="whyApply" class="block text-sm font-medium text-gray-600">Why do you want to apply for
+                        this position?</label>
+                    <textarea id="whyApply" name="whyApply"
+                        class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500" rows="3"
+                        required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="strengths" class="block text-sm font-medium text-gray-600">What are your strengths as an
+                        applicant?</label>
+                    <textarea id="strengths" name="strengths"
+                        class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500" rows="3"
+                        required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="weaknesses" class="block text-sm font-medium text-gray-600">What areas do you feel you
+                        need improvement in?</label>
+                    <textarea id="weaknesses" name="weaknesses"
+                        class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-indigo-500" rows="3"
+                        required></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit"
+                class="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
